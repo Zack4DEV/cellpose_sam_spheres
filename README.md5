@@ -1,0 +1,54 @@
+📊 Cell Seeding Efficiency Measurement with Cellpose + SAM
+
+This project analyzes live cell imaging time-series data using Cellpose, SAM, and Microsam to classify cell states and compute seeding efficiency metrics.
+
+---
+
+📁 Folder Structure
+
+- data/raw/: Original input .tif images
+- data/processed/: Segmentations, masks, or extracted features
+- results/masks/: Per-frame labeled masks for 4 classes
+- results/videos/: AVI visualizations (overlays + masks)
+- results/metrics.csv: Table of cell count, area, brightness per frame
+- logs/: Daily notes and changelogs
+
+---
+
+🧪 Classification Targets
+
+1. Circular cells (initial frames)
+2. Fixed cells (midpoint)
+3. Dead circular cells (post-fixation)
+4. Fragments or abnormal detections
+
+---
+
+⚙ Workflow
+
+1. Preprocess .tif using Cellpose+SAM
+2. Segment and classify per frame
+3. Track and extract brightness, area, count
+4. Output:
+   - Masked videos
+   - Combined overlay videos
+   - CSV with per-frame stats
+
+---
+
+▶ Output
+
+- metrics.csv: frame, class, avg_brightness, avg_area, count
+- AVI videos with overlayed masks and raw frames
+
+---
+
+🧠 Dependencies
+
+Requirements.txt Py packages for the Python environment setup.
+
+---
+
+📆 Logs
+
+Daily logs are maintained in logs/daily.md

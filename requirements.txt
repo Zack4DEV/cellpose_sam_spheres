@@ -1,0 +1,14 @@
+txt
+numpy
+pandas
+matplotlib
+scikit-image
+scikit-learn
+opencv-python
+cellpose==2.2.1
+torch
+tqdm
+segment-anything
+imageio
+notebook
+microsam
